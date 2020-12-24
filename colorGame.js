@@ -21,7 +21,11 @@ function init(){
     newColors.addEventListener("click", function(){
         resetGame()
     });   
-
+    
+    /* 
+        max duration of the game is set to 60 seconds. if the user does not finish to play 
+        before the timeout, alert is shown and the game is reset.
+    */    
     stop = setInterval(function(){
         alert("Please, try faster the next time!"); 
         resetGame();    
@@ -47,15 +51,6 @@ function resetGame(){
     gamePlay();           
 }
 
-/* 
-    function - max duration of the game is set to 60 seconds. if the user does not finish to play 
-               before the timeout, alert is shown and the game is reset.
-*/
-function gamePlay(){
-    gamePlayExecute();
-      
-}
-
 /*
     function - the squares' colors initiated by the "colors" array. the number of
                squares initiated is by the chosen mode (EASY by default).
@@ -65,7 +60,7 @@ function gamePlay(){
                the guess color font color updated to its color (rgb) and the game stops
                (reset of timeout).
 */
-function gamePlayExecute(){
+function gamePlay(){
     for (var i = 0; i < numOfSquares; i++){
         squares.item(i).style.backgroundColor = colors[i];
         squares.item(i).addEventListener("click", function(){
