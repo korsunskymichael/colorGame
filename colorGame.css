@@ -1,0 +1,72 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+    font-size: 65%;
+}
+
+#container {
+	max-width: 600px;
+	margin: auto;
+	padding-top: 20px;
+
+}
+.square {
+	width: 30%;
+	background-color: none;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+    border-radius: 25%;
+	transition: background .5s;
+} 
+
+h1 {
+	color: white;
+	background-color: grey;
+	font-size: 3.5em;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#guess_color {
+	display: block;
+	font-size: 2em;
+}
+
+#button_menu {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+#message {
+	color: grey;
+	font-size: 1.1em;
+	display: inline-block;
+	width: 20%;
+}
+
+button {
+	outline: none;
+	color: grey;
+    border:none;
+	font-family: "Montserrat", "Avenir";
+	font-size: 1.5em;
+	background-color: white;
+	height: 100%;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+}
+
+button:hover {
+	background-color: lightgrey;
+	color: white;
+}
+
+.selected {
+	background-color: grey;
+	color: white;
+}
